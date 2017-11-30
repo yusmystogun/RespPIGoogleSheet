@@ -81,7 +81,7 @@ def main():
     body = {
       'values': values
     }
-    result = service.spreadsheets().values().update(
+    result = service.spreadsheets().values().append(
         spreadsheetId=spreadsheetId, range=rangeName,
         valueInputOption="USER_ENTERED", body=body).execute()
 
